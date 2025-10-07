@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Acerca de {% endblock %}
+
+{% block background%}{%load static%}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Ingeniero Cloud.</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-3 col-md-4 offset-lg-1">
+ <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Edwin Martínez</h2>   
+    <p><strong>Soy Edwin Martínez, Especialista en Soluciones Multinube.</strong></p>
+
+<p>Ayudo a empresas a navegar y optimizar sus entornos en la nube, aprovechando lo mejor de proveedores líderes como <strong>Azure, Alibaba Cloud y Amazon Web Services</strong>. Actualmente, aplico mi experiencia en <strong>BizzDesign</strong>, contribuyendo a una plataforma internacional de Software como Servicio.</p>
+
+<p>Mi trayectoria incluye un rol clave en <strong>Alibaba Cloud</strong>, donde brindé soporte y soluciones directas a los usuarios, lo que me permitió adquirir una certificación integral en áreas críticas como <strong>networking, cloud native y seguridad</strong>. Esta experiencia técnica se complementa con una formación única como <strong>analista de calidad e ingeniero de procesos</strong>, dotándome de un pensamiento sistémico y un enfoque orientado a la mejora continua para cada proyecto.</p>
+
+<p>Cuando no estoy diseñando arquitecturas en la nube, canalizo mi disciplina en deportes como boxeo y ciclismo, o cultivando mi creatividad diseñando pequeños ecosistemas en terrarios y acuarios.</p>
+
+<p><strong>¿Tienes un proyecto en mente o necesitas asesoría? <a href="/contact">Ponte en contacto conmigo</a>, estoy aquí para brindarte mi apoyo.</strong></p>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Contacto {% endblock %}
+
+{% block background%}{%load static%}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-8 col-md-10 mx-auto">
+    <div class="contacto">
+    <h2>Hablemos de Tu Próximo Proyecto en la Nube</h2>
+    
+    <p>¿Tienes un desafío tecnológico que resolver? Estoy aquí para ayudarte a diseñar e implementar soluciones cloud robustas y escalables.</p>
+    <p>Si estás buscando expertise en entornos multinube o necesitas asesoría para optimizar tu infraestructura cloud, estaré encantado de conversar contigo.</p>
+    
+     <div class="detalles-contacto">
+        <p><b>📱 WhatsApp:</b> <a href="https://wa.me/525585870498">+52 55 8587 0498</a></p>
+        <p><strong>💼 Honorarios:</strong> $650 MXN/h (precio base consultoría)</p>
+        <p><strong>💰 Diagnóstico inicial:</strong> $5,000 MXN (8-10 horas)</p>
+        <p><b>⏰ Respuesta:</b> Dentro de 24 horas hábiles</p>
+    </div>
+
+    <p><strong>¿Tienes un proyecto específico en mente? <a href="https://wa.me/525585870498">Envíame un mensaje</a> con los detalles y te responderé a la brevedad.</strong></p>
+    <div class="llamado-accion">
+        <p><em>¿Listo para comenzar? Agenda una llamada de exploración sin costo para discutir tus requerimientos.</em></p>
+    </div>
+</div>
+</div>
+{% endblock %}
