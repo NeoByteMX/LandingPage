@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    command: gunicorn --bind 0.0.0.0:8000 webpersonal.wsgi:application
+    volumes:
+      - .:/usr/src/app
+    expose:
+      - "8000" # Puerto interno solo visible para otros contenedores
+
+  nginx:
+    # Usamos el Dockerfile personalizado para incrustar la configuración
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    volumes:
+      - ./staticfiles:/usr/src/app/static
+      - ./media:/usr/src/app/media
+    ports:
+      - "8080:80" # Puerto externo que recibe el tráfico del usuario
+    depends_on:
+      - web

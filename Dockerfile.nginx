@@ -1,0 +1,10 @@
+# Usa la imagen base de Nginx
+FROM nginx:1.21
+
+# Elimina la configuración por defecto (la página de bienvenida)
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Copia tu configuración personalizada al directorio de configuraciones de Nginx
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+# El resto de la configuración se mantiene, Nginx expone el puerto 80 por defecto
